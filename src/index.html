@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proj</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="fontello-d541dc62/css/fontello.css">
+</head>
+
+<body class="w-full overflow-x-hidden">
+    <main id="main" class="w-full 2xl:container mx-auto h-[100vh] overflow-y-scroll overflow-x-hidden">
+        <section class="w-full relative h-[100vh] flex flex-wrap">
+            <div class="flex w-full h-full absolute z-10 left-0 top-0">
+                <video class="w-full h-full object-cover" autoplay muted loop src="media/stvideo.mp4"></video>
+            </div>
+            <header class="w-full flex justify-between items-center relative z-[100] px-4">
+                <figure class="h-[100px] w-[100px] p-4 flex justify-center items-center">
+                    <img class="object-cover" src="media/logo-main.png" alt="">
+                </figure>
+                <span id="toggle" class="flex h-full relative justify-center items-center">
+                    <svg class="ham hamRotate ham4" id="svg" viewBox="0 0 100 100" width="80">
+                        <path id="path1" class="line top"
+                            d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                        <path class="line middle" d="m 70,50 h -40" />
+                        <path class="line bottom"
+                            d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+                    </svg>
+                </span>
+                <div class="flex h-full items-center">
+                    <span class="hidden md:flex h-full justify-center items-center text-xl text-white">Showcase</span>
+                    <span
+                        class="relative cursor-pointer group flex justify-center ms-3 content-center text-center bg-white rounded-full w-[40px] h-[40px] text-3xl font-bold">
+                        <span
+                            class="z-[1] rounded-full duration-[0.4s] absolute flex w-[0%] h-[0%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-[#d8ff36] group-hover:w-[105%] group-hover:h-[105%]"></span>
+                        <span
+                            class="z-[2] rounded-full absolute flex w-full h-full top-0 left-0 bg-[#ffffff00] text-3xl font-bold text-center justify-center content-center">+</span>
+                    </span>
+                </div>
+            </header>
+            <div class="flex items-end w-full h-[0vh] z-40 fixed left-0 top-0 bg-[#000000] duration-[.6s]" id="box">
+                <nav class="w-full overflow-y-scroll px-4 h-[83%]  -white">
+
+                    <ul class="w-full flex flex-wrap justify-start  -white">
+                        <li class="w-full flex mb-3 h-[60px] sm:h-[120px]  -white">
+                            <span
+                                class="flex justify-center  text-[17px] sm:text-[23px] -white mx-5 text-[#494949] font-bold cursor-pointer">01.</span>
+                            <a class="flex duration-[0.3s] text-[50px] md:text-[100px] text-center -white items-end ms-7 text-[#aeaeae] font-semibold relative hover:text-white before:w-[0%] before:h-[3px] before:bg-[#d8ff36] before:content-[''] before:absolute before:bottom-0  before:duration-[.2s]"
+                                href="">Home
+
+                            </a>
+                            <i
+                                class="bi bi-chevron-down flex text-[20px] sm:text-[40px]  -white items-center px-2 text-[#aeaeae] cursor-pointer"></i>
+                        </li>
+                        <li class="w-full flex mb-3 h-[60px] sm:h-[120px]  -white">
+                            <span
+                                class="flex justify-center  text-[17px] sm:text-[23px] -white mx-5 text-[#494949] font-bold cursor-pointer">02.</span>
+                            <a class="flex duration-[0.3s] text-[50px] md:text-[100px] text-center -white items-end ms-7 text-[#aeaeae] font-semibold relative hover:text-white before:w-[0%] before:h-[3px] before:bg-[#d8ff36] before:content-[''] before:absolute before:bottom-0  before:duration-[.2s]"
+                                href="">About
+
+                            </a>
+                            <i
+                                class="bi bi-chevron-down flex text-[20px] sm:text-[40px]  -white items-center px-2 text-[#aeaeae] cursor-pointer"></i>
+                        </li>
+                        <li class="w-full flex mb-3 h-[60px] sm:h-[120px]  -white">
+                            <span
+                                class="flex justify-center  text-[17px] sm:text-[23px] -white mx-5 text-[#494949] font-bold cursor-pointer">03.</span>
+                            <a class="flex duration-[0.3s] text-[50px] md:text-[100px] text-center -white items-end ms-7 text-[#aeaeae] font-semibold relative hover:text-white before:w-[0%] before:h-[3px] before:bg-[#d8ff36] before:content-[''] before:absolute before:bottom-0  before:duration-[.2s]"
+                                href="">Projects
+
+                            </a>
+                            <i
+                                class="bi bi-chevron-down flex text-[20px] sm:text-[40px]  -white items-center px-2 text-[#aeaeae] cursor-pointer"></i>
+                        </li>
+                        <li class="w-full flex mb-3 h-[60px] sm:h-[120px]  -white">
+                            <span
+                                class="flex justify-center  text-[17px] sm:text-[23px] -white mx-5 text-[#494949] font-bold cursor-pointer">04.</span>
+                            <a class="flex duration-[0.3s] text-[50px] md:text-[100px] text-center -white items-end ms-7 text-[#aeaeae] font-semibold relative hover:text-white before:w-[0%] before:h-[3px] before:bg-[#d8ff36] before:content-[''] before:absolute before:bottom-0  before:duration-[.2s]"
+                                href="">Blogs
+
+                            </a>
+                            <i
+                                class="bi bi-chevron-down flex text-[20px] sm:text-[40px]  -white items-center px-2 text-[#aeaeae] cursor-pointer"></i>
+                        </li>
+                        <li class="w-full flex mb-3 h-[60px] sm:h-[120px]  -white">
+                            <span
+                                class="flex justify-center  text-[17px] sm:text-[23px] -white mx-5 text-[#494949] font-bold cursor-pointer">05.</span>
+                            <a class="flex duration-[0.3s] text-[50px] md:text-[100px] text-center -white items-end ms-7 text-[#aeaeae] font-semibold relative hover:text-white before:w-[0%] before:h-[3px] before:bg-[#d8ff36] before:content-[''] before:absolute before:bottom-0  before:duration-[.2s]"
+                                href="">Contact Us
+
+                            </a>
+                            <i
+                                class="bi bi-chevron-down flex text-[20px] sm:text-[40px]  -white items-center px-2 text-[#aeaeae] cursor-pointer"></i>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </div>
+            <div class="w-full h-[0vh] z-30 fixed left-0 top-0 bg-[#d8ff36] duration-[.6s]" id="shadow"></div>
+            <h1
+                class="text-white  my-[100px] relative z-20 px-4 w-[300px] md:w-[550px] text-[70px] md:text-[100px] leading-tight font-semibold flex items-center ">
+                We Make Everything
+            </h1>
+
+        </section>
+        <section class="w-full px-10 py-16">
+            <div class="w-full flex flex-wrap">
+
+                <article
+                    class="w-full md:w-1/2 lg:w-1/3 flex flex-wrap justify-center  border-black py-20 relative group">
+                    <span class="flex w-full justify-center items-center"><i
+                            class="bi bi-stars text-[60px] md:text-[65px] xl:text-[75px]"></i></span>
+                    <h2
+                        class="w-full flex justify-center items-center capitalize text-[40px] md:text-[50px] xl:text-[60px] font-semibold my-2">
+                        creation</h2>
+                    <p class="flex w-[65%] sm:w-[50%] lg:w-[80%] text-center text-[18px] text-[#1b252e]">Developing
+                        websites is about so much
+                        more than marketing. It’s also about aesthetics.</p>
+                    <span
+                        class="flex w-[90%] h-[90%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute duration-[.4s] origin-center rounded-full bg-[#d8ff36] -z-10 scale-0 group-hover:scale-100"></span>
+                    <span id="left"
+                        class="w-[50px] h-[50px] flex absolute right-32 -bottom-6 rounded-full bg-[#d8ff36] opacity-0 group-hover:duration-[.4s] group-hover:opacity-100 group-hover:translate-x-4 group-hover:translate-y-4"></span>
+                    <span id="center"
+                        class="w-[40px] h-[40px] flex absolute right-3 -bottom-14 rounded-full bg-[#d8ff36] opacity-0 origin-bottom-right group-hover:duration-[.8s] group-hover:opacity-100 group-hover:scale-[2]"></span>
+                    <span id="right"
+                        class="w-[30px] h-[30px] flex absolute right-20 bottom-1 rounded-full bg-[#d8ff36] opacity-0  group-hover:duration-[.8s] group-hover:opacity-100 group-hover:translate-x-10 group-hover:-translate-y-12"></span>
+                </article>
+
+                <article
+                    class="w-full md:w-1/2 lg:w-1/3 flex flex-wrap justify-center  border-black py-20 relative group">
+                    <span class="flex w-full justify-center items-center"><i
+                            class="bi bi-pen text-[60px] md:text-[65px] xl:text-[75px]"></i></span>
+                    <h2
+                        class="w-full flex justify-center items-center capitalize text-[40px] md:text-[50px] xl:text-[60px] font-semibold my-2">
+                        websites</h2>
+                    <p class="flex w-[65%] sm:w-[50%] lg:w-[80%] text-center text-[18px] text-[#1b252e]">Developing
+                        websites is about so much
+                        more than marketing. It’s also about aesthetics.</p>
+                    <span
+                        class="flex w-[90%] h-[90%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute duration-[.4s] origin-center rounded-full bg-[#d8ff36] -z-10 scale-0 group-hover:scale-100"></span>
+                    <span id="left"
+                        class="w-[50px] h-[50px] flex absolute right-32 -bottom-6 rounded-full bg-[#d8ff36] opacity-0 group-hover:duration-[.4s] group-hover:opacity-100 group-hover:translate-x-4 group-hover:translate-y-4"></span>
+                    <span id="center"
+                        class="w-[40px] h-[40px] flex absolute right-3 -bottom-14 rounded-full bg-[#d8ff36] opacity-0 origin-bottom-right group-hover:duration-[.8s] group-hover:opacity-100 group-hover:scale-[2]"></span>
+                    <span id="right"
+                        class="w-[30px] h-[30px] flex absolute right-20 bottom-1 rounded-full bg-[#d8ff36] opacity-0  group-hover:duration-[.8s] group-hover:opacity-100 group-hover:translate-x-10 group-hover:-translate-y-12"></span>
+                </article>
+
+                <article
+                    class="w-full md:w-1/2 lg:w-1/3 flex flex-wrap justify-center  border-black py-20 relative group">
+                    <span class="flex w-full justify-center items-center"><i
+                            class="bi bi-window-fullscreen text-[60px] md:text-[65px] xl:text-[75px]"></i></span>
+                    <h2
+                        class="w-full flex justify-center items-center capitalize text-[40px] md:text-[50px] xl:text-[60px] font-semibold my-2">
+                        studio</h2>
+                    <p class="flex w-[65%] sm:w-[50%] lg:w-[80%] text-center text-[18px] text-[#1b252e]">Developing
+                        websites is about so much
+                        more than marketing. It’s also about aesthetics.</p>
+                    <span
+                        class="flex w-[90%] h-[90%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute duration-[.4s] origin-center rounded-full bg-[#d8ff36] -z-10 scale-0 group-hover:scale-100"></span>
+                    <span id="left"
+                        class="w-[50px] h-[50px] flex absolute right-32 -bottom-6 rounded-full bg-[#d8ff36] opacity-0 group-hover:duration-[.4s] group-hover:opacity-100 group-hover:translate-x-4 group-hover:translate-y-4"></span>
+                    <span id="center"
+                        class="w-[40px] h-[40px] flex absolute right-3 -bottom-14 rounded-full bg-[#d8ff36] opacity-0 origin-bottom-right group-hover:duration-[.8s] group-hover:opacity-100 group-hover:scale-[2]"></span>
+                    <span id="right"
+                        class="w-[30px] h-[30px] flex absolute right-20 bottom-1 rounded-full bg-[#d8ff36] opacity-0  group-hover:duration-[.8s] group-hover:opacity-100 group-hover:translate-x-10 group-hover:-translate-y-12"></span>
+                </article>
+
+            </div>
+        </section>
+        <section class="w-full px-6 py-16 border-t border-t-black border-b border-b-black">
+            <div class="w-full flex flex-wrap my-16">
+                <div class="w-full lg:w-1/2 flex flex-wrap">
+                    <div class="w-full flex flex-wrap">
+                        <h3 class="w-full uppercase font-bold text-[18px]">featured projects</h3>
+                        <h2 class="w-full capitalize font-semibold text-[60px]">studio Showcase</h2>
+                    </div>
+                    <ul id="studio" class="w-full flex flex-wrap my-6">
+
+                        <li data-li="1" class="w-full flex flex-wrap py-6 border-b cursor-pointer">
+                            <figure class="flex w-full lg:hidden">
+                                <img class="flex w-full h-full object-cover" src="media/1.jpg" alt="">
+                            </figure>
+                            <div class="w-full flex flex-wrap mt-4">
+                                <h3
+                                    class="w-full lg:w-[20%] flex items-center uppercase text-[#9b9b9b] lg:text-black font-bold">
+                                    branding</h3>
+                                <h2
+                                    class="w-fit relative flex items-center capitalize duration-[.4s] text-black lg:text-[#9b9b9b] font-bold text-[30px] before:w-[0%] before:h-[1px] before:bg-[#000000] before:content-[''] before:absolute before:bottom-0  before:duration-[.2s]">
+                                    museums art consept</h2>
+                            </div>
+                        </li>
+                        <li data-li="2" class="w-full flex flex-wrap py-6 border-b cursor-pointer">
+                            <figure class="flex w-full lg:hidden">
+                                <img class="flex w-full h-full object-cover" src="media/2.jpg" alt="">
+                            </figure>
+                            <div class="w-full flex flex-wrap mt-4">
+                                <h3
+                                    class="w-full lg:w-[20%] flex items-center uppercase text-[#9b9b9b] lg:text-black font-bold">
+                                    marketing</h3>
+                                <h2
+                                    class="w-fit relative flex items-center capitalize duration-[.4s] text-black lg:text-[#9b9b9b] font-bold text-[30px] before:w-[0%] before:h-[1px] before:bg-[#000000] before:content-[''] before:absolute before:bottom-0  before:duration-[.4s]">
+                                    market economy graphics</h2>
+                            </div>
+                        </li>
+                        <li data-li="3" class="w-full flex flex-wrap py-6 border-b cursor-pointer">
+                            <figure class="flex w-full lg:hidden">
+                                <img class="flex w-full h-full object-cover" src="media/3.jpg" alt="">
+                            </figure>
+                            <div class="w-full flex flex-wrap mt-4">
+                                <h3
+                                    class="w-full lg:w-[20%] flex items-center uppercase text-[#9b9b9b] lg:text-black font-bold">
+                                    design</h3>
+                                <h2
+                                    class="w-fit relative flex items-center capitalize duration-[.4s] text-black lg:text-[#9b9b9b] font-bold text-[30px] before:w-[0%] before:h-[1px] before:bg-[#000000] before:content-[''] before:absolute before:bottom-0  before:duration-[.4s]">
+                                    headphones 3D rendering</h2>
+                            </div>
+                        </li>
+                        <li data-li="4" class="w-full flex flex-wrap py-6 border-b cursor-pointer">
+                            <figure class="flex w-full lg:hidden">
+                                <img class="flex w-full h-full object-cover" src="media/4.jpg" alt="">
+                            </figure>
+                            <div class="w-full flex flex-wrap mt-4">
+                                <h3
+                                    class="w-full lg:w-[20%] flex items-center uppercase text-[#9b9b9b] lg:text-black font-bold">
+                                    design</h3>
+                                <h2
+                                    class="w-fit relative flex items-center capitalize duration-[.4s] text-black lg:text-[#9b9b9b] font-bold text-[30px] before:w-[0%] before:h-[1px] before:bg-[#000000] before:content-[''] before:absolute before:bottom-0  before:duration-[.4s]">
+                                    bussines card logo</h2>
+                            </div>
+                        </li>
+                        <li data-li="5" class="w-full flex flex-wrap py-6 border-b cursor-pointer">
+                            <figure class="flex w-full lg:hidden">
+                                <img class="flex w-full h-full object-cover" src="media/5.jpg" alt="">
+                            </figure>
+                            <div class="w-full flex flex-wrap mt-4">
+                                <h3
+                                    class="w-full lg:w-[20%] flex items-center uppercase text-[#9b9b9b] lg:text-black font-bold">
+                                    interactive</h3>
+                                <h2
+                                    class="w-fit relative flex items-center capitalize duration-[.4s] text-black lg:text-[#9b9b9b] font-bold text-[30px] before:w-[0%] before:h-[1px] before:bg-[#000000] before:content-[''] before:absolute before:bottom-0  before:duration-[.4s]">
+                                    flower store mobile app</h2>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div id="rightDiv" class="hidden lg:w-1/2 lg:flex justify-center items-center relative">
+                    <div class="w-[400px] h-[400px] rounded-full bg-[#d8ff36] animate-scale"></div>
+                    <div class="w-[450px] h-[350px] flex absolute rotate-[-30deg]">
+                        <div class="w-full h-full flex relative">
+                            <figure
+                                class="w-full h-full flex absolute top-0 left-0 opacity-100 scale-1 rotate-[10deg] duration-[.4s]"
+                                data-fig="1">
+                                <img class="w-full h-full object-cover" src="media/1.jpg" alt="">
+                            </figure>
+                            <figure
+                                class="w-full h-full flex absolute top-0 left-0 opacity-0 scale-0 rotate-[0deg] duration-[.4s]"
+                                data-fig="2">
+                                <img class="w-full h-full object-cover" src="media/2.jpg" alt="">
+                            </figure>
+                            <figure
+                                class="w-full h-full flex absolute top-0 left-0 opacity-0 scale-0 rotate-[0deg] duration-[.4s]"
+                                data-fig="3">
+                                <img class="w-full h-full object-cover" src="media/3.jpg" alt="">
+                            </figure>
+                            <figure
+                                class="w-full h-full flex absolute top-0 left-0 opacity-0 scale-0 rotate-[0deg] duration-[.4s]"
+                                data-fig="4">
+                                <img class="w-full h-full object-cover" src="media/4.jpg" alt="">
+                            </figure>
+                            <figure
+                                class="w-full h-full flex absolute top-0 left-0 opacity-0 scale-0 rotate-[0deg] duration-[.4s]"
+                                data-fig="5">
+                                <img class="w-full h-full object-cover" src="media/5.jpg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex ">
+                    <div id="btn"
+                        class="w-[180px] h-[65px] flex justify-center items-center bg-black rounded-[32px]  overflow-hidden cursor-pointer duration-[0.3s] hover:duration-[0.4s] relative z-[40] hover:bg-[#d8ff36]">
+                        <div class="w-full h-full flex justify-center items-center group relative">
+                            <pre
+                                class="flex relative z-[1] justify-center items-center w-[30px] h-[30px] justify-self-center self-center rounded-full duration-[.4s] text-black font-bold bg-[#d8ff36] px-3 text-[25px] before:content-['+'] before:opacity-0 before:text-white before:absolute before:z-[0] before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:origin-center before:flex before:bg-black before:w-full before:h-full before:scale-0 before:duration-[.4s] before:justify-center before:items-center group-hover:before:scale-110 before:rounded-full group-hover:before:translate-x-[-50%] group-hover:before:translate-y-[-50%] group-hover:before:opacity-100">+</pre>
+                            <span
+                                class="flex text-white px-3 font-bold capitalize text-[17px] duration-[.4s] group-hover:text-black">all
+                                projects</span>
+                            <span id="show"
+                                class="w-[100%] h-[0%] flex absolute left-0 bg-[#d8ff36] -z-10 duration-[.4s]"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full px-4 py-10">
+            <div class="w-full flex flex-wrap">
+                <div class="w-full flex flex-wrap">
+                    <div class="w-[100%] flex flex-wrap sm:w-[60%] md:w-[55%] border-black">
+                        <h2 class="w-full flex uppercase text-[16px] font-bold">welcome to onovo</h2>
+                        <p class="w-full flex capitalize text-[50px] md:text-[64px] font-semibold md:leading-[80px]">A
+                            Design Agency
+                            Delivering Success by
+                            Winning Hearts</p>
+                    </div>
+                    <div
+                        class="w-[100%] justify-start md:justify-end flex flex-wrap sm:w-[40%] md:w-[45%]  border-black">
+                    </div>
+                </div>
+                <div class="w-full flex flex-wrap">
+                    <div class="w-[100%] flex flex-wrap border-black">
+                        <div class="w-[100%] sm:w-[50%] border-black pe-6">
+                            <h1 class="w-full uppercase font-semibold text-[20px] my-4">our mission</h1>
+                            <p class="w-full text-[20px]">From the moment our company was founded we have helped our
+                                clients find exceptional solutions for their businesses memorable brands and digital
+                                products. Our expertise grows with each year, and our accumulated experience.</p>
+                        </div>
+                        <div class="w-[100%] sm:w-[50%] border-black">
+                            <h1 class="w-full uppercase font-semibold text-[20px] my-4">our goal</h1>
+                            <p class="w-full text-[20px]">Our goal is to deliver amazing experiences that make people
+                                talk, and build strategic value for brands, tech, entertainment.</p>
+
+                            <div id="btn2"
+                                class="w-[200px] h-[65px] flex justify-center items-center bg-black rounded-[32px]  overflow-hidden cursor-pointer duration-[0.3s] hover:duration-[0.4s] relative z-[40] hover:bg-[#d8ff36] my-5">
+                                <div class="w-full h-full flex justify-center items-center group relative">
+                                    <pre
+                                        class="flex relative z-[1] justify-center items-center w-[30px] h-[30px] justify-self-center self-center rounded-full duration-[.4s] text-black font-bold bg-[#d8ff36] px-3 text-[25px] before:content-['+'] before:opacity-0 before:text-white before:absolute before:z-[0] before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:origin-center before:flex before:bg-black before:w-full before:h-full before:scale-0 before:duration-[.4s] before:justify-center before:items-center group-hover:before:scale-110 before:rounded-full group-hover:before:translate-x-[-50%] group-hover:before:translate-y-[-50%] group-hover:before:opacity-100">+</pre>
+                                    <span
+                                        class="flex text-white px-3 font-bold capitalize text-[17px] duration-[.4s] group-hover:text-black">more
+                                        about us
+                                    </span>
+                                    <span id="show2"
+                                        class="w-[100%] h-[0%] flex absolute left-0 bg-[#d8ff36] -z-10 duration-[.4s]"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="w-full flex py-16 my-16">
+            <div class="w-full flex flex-wrap">
+                <div class="w-full flex flex-wrap justify-center px-4">
+                    <h2 class="w-full flex justify-center items-center text-[16px] font-bold uppercase">experts team
+                        members</h2>
+                    <p
+                        class="w-full lg:w-[75%] leading-[50px] text-[45px] md:text-[55px] lg:text-[65px] font-semibold flex justify-center items-center text-center md:leading-[70px]">
+                        We do awesome Services for our clients.</p>
+                </div>
+                <div
+                    class="w-full grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 my-16 gap-8 px-8">
+
+
+                    <div
+                        class="flex group flex-wrap border relative border-black bg-transparent overflow-hidden before:content-[''] before:w-[500px] before:h-[500px] before:flex before:absolute before:bg-[#d8ff36] before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-[2] before:rounded-full before:duration-[.6s] before:-z-10 cursor-pointer">
+                        <div class="w-full p-7 flex flex-wrap ">
+                            <h2 class="w-full capitalize text-[40px] font-semibold leading-[50px]">thomas jackki</h2>
+                            <h3 class="w-full uppercase text-[#1b252e] font-bold text-[16px] my-3">ui & ux designer</h3>
+                            <span
+                                class="w-[70px] h-[70px] group rounded-full border border-black bg-transparent relative justify-center flex items-center before:content-[''] before:absolute before:bg-black before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-100  before:w-[63px] before:h-[63px] before:rounded-full before:duration-[.4s] before:-z-10 me-3"><a
+                                    href=""
+                                    class="icon-facebook flex w-full h-full text-[25px] justify-center items-center text-gray-500 hover:text-white duration-[.4s]"></a></span>
+                            <span
+                                class="w-[70px] h-[70px] group rounded-full border border-black bg-transparent relative justify-center flex items-center before:content-[''] before:absolute before:bg-black before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-100  before:w-[63px] before:h-[63px] before:rounded-full before:duration-[.4s] before:-z-10 "><a
+                                    href=""
+                                    class="icon-linkedin flex w-full h-full text-[25px] justify-center items-center text-gray-500 hover:text-white duration-[.4s]"></a></span>
+                        </div>
+                        <figure class="w-full flex relative">
+                            <img class="w-full object-contain grayscale-[100%] group-hover:grayscale-[0%] group-hover:scale-110 duration-[.4s]"
+                                src="media/team-2-t-min.png" alt="">
+                            <!-- <span
+                                class="uppercase absolute h-[500px] lg:h-[400px] -right-4 bottom-0 text-[500px] text-white GFG group-hover:text-[#d8ff36] duration-[.4s]">t</span> -->
+
+                        </figure>
+                    </div>
+
+
+                    <div
+                        class="flex group flex-wrap border relative border-black bg-transparent overflow-hidden before:content-[''] before:w-[500px] before:h-[500px] before:flex before:absolute before:bg-[#d8ff36] before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-[2] before:rounded-full before:duration-[.6s] before:-z-10 cursor-pointer">
+                        <div class="w-full p-7 flex flex-wrap ">
+                            <h2 class="w-full capitalize text-[40px] font-semibold leading-[50px]">melanie robinson</h2>
+                            <h3 class="w-full uppercase text-[#1b252e] font-bold text-[16px] my-3">seo & marketing</h3>
+                            <span
+                                class="w-[70px] h-[70px] group rounded-full border border-black bg-transparent relative justify-center flex items-center before:content-[''] before:absolute before:bg-black before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-100  before:w-[63px] before:h-[63px] before:rounded-full before:duration-[.4s] before:-z-10 me-3"><a
+                                    href=""
+                                    class="icon-facebook flex w-full h-full text-[25px] justify-center items-center text-gray-500 hover:text-white duration-[.4s]"></a></span>
+                            <span
+                                class="w-[70px] h-[70px] group rounded-full border border-black bg-transparent relative justify-center flex items-center before:content-[''] before:absolute before:bg-black before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-100  before:w-[63px] before:h-[63px] before:rounded-full before:duration-[.4s] before:-z-10 "><a
+                                    href=""
+                                    class="icon-linkedin flex w-full h-full text-[25px] justify-center items-center text-gray-500 hover:text-white duration-[.4s]"></a></span>
+                        </div>
+                        <figure class="w-full flex relative">
+                            <img class="w-full object-contain grayscale-[100%] group-hover:grayscale-[0%] group-hover:scale-110 duration-[.4s]"
+                                src="media/team-6-t-min.png" alt="">
+                            <!-- <span
+                                class="uppercase absolute h-[500px] lg:h-[400px] -right-4 bottom-0 text-[500px] text-white GFG group-hover:text-[#d8ff36] duration-[.4s]">m</span> -->
+
+                        </figure>
+                    </div>
+                    <div
+                        class="flex group flex-wrap border relative border-black bg-transparent overflow-hidden before:content-[''] before:w-[500px] before:h-[500px] before:flex before:absolute before:bg-[#d8ff36] before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-[2] before:rounded-full before:duration-[.6s] before:-z-10 cursor-pointer">
+                        <div class="w-full p-7 flex flex-wrap ">
+                            <h2 class="w-full capitalize text-[40px] font-semibold leading-[50px]">steven morrison</h2>
+                            <h3 class="w-full uppercase text-[#1b252e] font-bold text-[16px] my-3">back-end developer
+                            </h3>
+                            <span
+                                class="w-[70px] h-[70px] group rounded-full border border-black bg-transparent relative justify-center flex items-center before:content-[''] before:absolute before:bg-black before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-100  before:w-[63px] before:h-[63px] before:rounded-full before:duration-[.4s] before:-z-10 me-3"><a
+                                    href=""
+                                    class="icon-facebook flex w-full h-full text-[25px] justify-center items-center text-gray-500 hover:text-white duration-[.4s]"></a></span>
+                            <span
+                                class="w-[70px] h-[70px] group rounded-full border border-black bg-transparent relative justify-center flex items-center before:content-[''] before:absolute before:bg-black before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-100  before:w-[63px] before:h-[63px] before:rounded-full before:duration-[.4s] before:-z-10 "><a
+                                    href=""
+                                    class="icon-linkedin flex w-full h-full text-[25px] justify-center items-center text-gray-500 hover:text-white duration-[.4s]"></a></span>
+                        </div>
+                        <figure class="w-full flex relative">
+                            <img class="w-full object-contain grayscale-[100%] group-hover:grayscale-[0%] group-hover:scale-110 duration-[.4s]"
+                                src="media/team-1-t-min.png" alt="">
+                            <!-- <span
+                                class="uppercase absolute h-[500px] lg:h-[400px] -right-4 bottom-0 text-[500px] text-white GFG group-hover:text-[#d8ff36] duration-[.4s]">s</span> -->
+
+                        </figure>
+                    </div>
+                    <div
+                        class="flex group flex-wrap border relative border-black bg-transparent overflow-hidden before:content-[''] before:w-[500px] before:h-[500px] before:flex before:absolute before:bg-[#d8ff36] before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-[2] before:rounded-full before:duration-[.6s] before:-z-10 cursor-pointer">
+                        <div class="w-full p-7 flex flex-wrap ">
+                            <h2 class="w-full capitalize text-[40px] font-semibold leading-[50px]">charlotte johnson
+                            </h2>
+                            <h3 class="w-full uppercase text-[#1b252e] font-bold text-[16px] my-3">seo & copywriter</h3>
+                            <span
+                                class="w-[70px] h-[70px] group rounded-full border border-black bg-transparent relative justify-center flex items-center before:content-[''] before:absolute before:bg-black before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-100  before:w-[63px] before:h-[63px] before:rounded-full before:duration-[.4s] before:-z-10 me-3"><a
+                                    href=""
+                                    class="icon-facebook flex w-full h-full text-[25px] justify-center items-center text-gray-500 hover:text-white duration-[.4s]"></a></span>
+                            <span
+                                class="w-[70px] h-[70px] group rounded-full border border-black bg-transparent relative justify-center flex items-center before:content-[''] before:absolute before:bg-black before:left-[50%] before:top-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:scale-0 hover:before:scale-100  before:w-[63px] before:h-[63px] before:rounded-full before:duration-[.4s] before:-z-10 "><a
+                                    href=""
+                                    class="icon-linkedin flex w-full h-full text-[25px] justify-center items-center text-gray-500 hover:text-white duration-[.4s]"></a></span>
+                        </div>
+                        <figure class="w-full flex relative">
+                            <img class="w-full object-contain grayscale-[100%] group-hover:grayscale-[0%] group-hover:scale-110 duration-[.4s]"
+                                src="media/team-7-t-min.png" alt="">
+                            <!-- <span
+                                class="uppercase absolute h-[500px] lg:h-[400px] -right-4 bottom-0 text-[500px] text-white GFG group-hover:text-[#d8ff36] duration-[.4s]">e</span> -->
+
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="w-full px-6 my-4">
+            <figure class="w-full">
+                <img class="w-full h-full object-cover" src="media/posts1.jpg" alt="">
+            </figure>
+        </section>
+        <section class="w-full my-8 px-6">
+            <div class="w-full flex flex-wrap">
+                <div class="w-full flex flex-wrap justify-center my-4">
+                    <h3 class="w-full flex uppercase font-bold text-[16px] justify-center items-center  border-black ">
+                        news & blog</h3>
+                    <h2
+                        class="w-[90%] flex capitalize font-semibold text-[40px] md:text-[50px] lg:text-[70px] text-center justify-center items-center">
+                        insights, thoughts, industry
+                        trends, marketing tips</h2>
+                </div>
+                <div
+                    class="w-full grid grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-5 my-4">
+
+                    <div class="flex flex-wrap">
+                        <figure class="flex w-full h-60">
+                            <img class="flex w-full h-full object-cover" src="media/post4-1000x667.jpg" alt="">
+                        </figure>
+                        <div class="w-full flex my-6 items-center">
+                            <div class="py-2 px-6 bg-[#d8ff36] rounded-[30px] text-[14px] font-bold me-2">April 2,2022
+                            </div>
+                            <span class="text-[18px] font-semibold ms-2">Art</span>
+                        </div>
+                        <h4 class="w-full font-bold text-[25px] mb-6">Play to Your Strengths and Supercharge Your
+                            Business</h4>
+                        <p class="w-full text-[20px]">Ambleton: Behind the Branding of High Calgary's Community Most
+                            innovative and successful builders and real estate...</p>
+                    </div>
+
+                    <div class="flex flex-wrap">
+                        <figure class="flex w-full h-60">
+                            <img class="flex w-full h-full object-cover" src="media/posts3-1000x667.jpg" alt="">
+                        </figure>
+                        <div class="w-full flex my-6 items-center">
+                            <div class="py-2 px-6 bg-[#d8ff36] rounded-[30px] text-[14px] font-bold me-2">April 2,2022
+                            </div>
+                            <span class="text-[18px] font-semibold ms-2">Marketing</span>
+                        </div>
+                        <h4 class="w-full font-bold text-[25px] mb-6">5 Steps to Create an Outstanding Marketing Plan
+                        </h4>
+                        <p class="w-full text-[20px]">Ambleton: Behind the Branding of High Calgary's Community Most
+                            innovative and successful builders and real estate...</p>
+                    </div>
+
+                    <div class="flex flex-wrap">
+                        <figure class="flex w-full h-60">
+                            <img class="flex w-full h-full object-cover" src="media/post1-1000x667.jpg" alt="">
+                        </figure>
+                        <div class="w-full flex my-6 items-center">
+                            <div class="py-2 px-6 bg-[#d8ff36] rounded-[30px] text-[14px] font-bold me-2">April 2,2022
+                            </div>
+                            <span class="text-[18px] font-semibold ms-2">copywriting</span>
+                        </div>
+                        <h4 class="w-full font-bold text-[25px] mb-6">10 Content Proofreading Tips to Catch More
+                            Avoidable</h4>
+                        <p class="w-full text-[20px]">Ambleton: Behind the Branding of High Calgary's Community Most
+                            innovative and successful builders and real estate...</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- component -->
+            <footer class="relative py-20 flex flex-col items-center bg-black overflow-hidden md:py-40">
+                <div class="relative z-[1] container m-auto px-6 md:px-12">
+                    <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
+                        <div class="flex flex-wrap items-center justify-between md:flex-nowrap">
+                            <div class="w-full space-x-12 flex justify-center text-gray-300 sm:w-7/12 md:justify-start">
+                                <ul class="list-disc list-inside space-y-8">
+                                    <li><a href="#" class="hover:text-sky-400 transition">Home</a></li>
+
+                                    <li><a href="#" class="hover:text-sky-400 transition">About</a></li>
+                                    <li><a href="#" class="hover:text-sky-400 transition">Projects</a></li>
+                                    <li><a href="#" class="hover:text-sky-400 transition">Blogs</a></li>
+                                    <li><a href="#" class="hover:text-sky-400 transition">Contact Us</a></li>
+                                </ul>
+
+                                <ul role="list" class="space-y-8">
+                                    <li>
+                                        <a href="#" class="flex items-center space-x-3 hover:text-sky-400 transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex items-center space-x-3 hover:text-sky-400 transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                            </svg>
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" class="flex items-center space-x-3 hover:text-sky-400 transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                            </svg>
+                                            <span>Facebook</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="flex items-center space-x-3 hover:text-sky-400 transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
+                                            </svg>
+                                            <span>Pintrest</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="flex items-center space-x-3 hover:text-sky-400 transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                            </svg>
+                                            <span>Instagram</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="w-10/12 m-auto  mt-16 space-y-6 text-center sm:text-left sm:w-5/12 sm:mt-auto">
+                                <span class="block text-gray-300">We change the way UI components librairies are
+                                    used</span>
+
+                                <span class="block text-gray-300">Tailus Blocks &copy; 2021</span>
+
+                                <span class="flex justify-between text-white">
+                                    <a href="#" class="font-semibold">Terms of Use </a>
+                                    <a href="#" class="font-semibold"> Privacy Policy</a>
+                                </span>
+
+                                <span class="block text-gray-300">Need help? <a href="#"
+                                        class="font-semibold text-white"> Contact Us</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="absolute h-full inset-0 flex items-center">
+                    <div aria-hidden="true"
+                        class="bg-layers bg-scale w-56 h-56 m-auto blur-xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-full md:w-[30rem] md:h-[30rem] md:blur-3xl">
+                    </div>
+                </div>
+                <div aria-hidden="true" class="absolute inset-0 w-full h-full bg-[#020314] opacity-80"></div>
+            </footer>
+
+            <!--
+
+    Add to your stylesheet
+
+.bg-layers {
+    -webkit-animation: filter-animation 4s infinite;
+    animation: filter-animation 4s infinite;
+}
+
+.bg-scale {
+    -webkit-animation: filter-animation 8s infinite;
+    animation: filter-scale 8s infinite;
+}
+  
+@-webkit-keyframes filter-animation {
+    0% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    50% {
+      -webkit-filter: hue-rotate(45deg);
+    }
+    
+    100% {
+      -webkit-filter: hue-rotate(0deg);
+    }
+}
+  
+@keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(45deg);
+    }
+    100% {
+      filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes filter-scale {
+    0% {
+      transform:scale(1);
+    }
+    50% {
+      transform:scale(1.4);
+    }
+    100% {
+        transform:scale(.8);
+    }
+}
+-->
+        </section>
+    </main>
+</body>
+<script>
+
+    let toggle = document.getElementById('toggle')
+    let svg = document.getElementById('svg')
+    let box = document.getElementById('box')
+    let shadow = document.getElementById('shadow')
+
+    let li = document.querySelectorAll('nav>ul>li')
+    let span = document.querySelectorAll('nav>ul>li>span')
+    let a = document.querySelectorAll('nav>ul>li>a')
+    let icon = document.querySelectorAll('nav>ul>li>i')
+    let main = document.getElementById('main')
+    let li2 = document.querySelectorAll('#studio>li')
+    let fig = document.querySelectorAll('#rightDiv figure')
+    let btn = document.getElementById('btn')
+    let show = document.getElementById('show')
+    let btn2 = document.getElementById('btn2')
+    let show2 = document.getElementById('show2')
+
+    let data_fig = ''
+
+
+    btn.addEventListener('mouseenter', (e) => {
+        if (show.classList.contains('h-[0%]')) {
+            show.classList.remove('bottom-[0%]')
+            show.classList.add('top-[0%]')
+            show.classList.remove('h-[0%]')
+            show.classList.add('h-[100%]')
+        }
+    })
+    btn.addEventListener('mouseleave', (e) => {
+        if (show.classList.contains('h-[100%]')) {
+            show.classList.remove('top-[0%]')
+            show.classList.add('bottom-[0%]')
+            show.classList.remove('h-[100%]')
+            show.classList.add('h-[0%]')
+        }
+    })
+
+    btn2.addEventListener('mouseenter', (e) => {
+        if (show2.classList.contains('h-[0%]')) {
+            show2.classList.remove('bottom-[0%]')
+            show2.classList.add('top-[0%]')
+            show2.classList.remove('h-[0%]')
+            show2.classList.add('h-[100%]')
+        }
+    })
+    btn2.addEventListener('mouseleave', (e) => {
+        if (show2.classList.contains('h-[100%]')) {
+            show2.classList.remove('top-[0%]')
+            show2.classList.add('bottom-[0%]')
+            show2.classList.remove('h-[100%]')
+            show2.classList.add('h-[0%]')
+        }
+    })
+
+    span.forEach((val) => {
+        val.addEventListener('mouseenter', (e) => {
+
+            e.target.nextElementSibling.classList.remove('text-[#aeaeae]')
+            e.target.nextElementSibling.classList.add('text-white')
+
+            if (e.target.nextElementSibling.classList.contains('before:w-[0%]')) {
+
+                e.target.nextElementSibling.classList.remove('before:w-[0%]')
+                e.target.nextElementSibling.classList.add('before:w-[100%]')
+                e.target.nextElementSibling.classList.remove('before:right-0')
+                e.target.nextElementSibling.classList.add('left-0')
+
+            }
+
+
+        })
+
+        val.addEventListener('mouseleave', (e) => {
+
+            e.target.nextElementSibling.classList.remove('text-white')
+            e.target.nextElementSibling.classList.add('text-[#aeaeae]')
+
+            if (e.target.nextElementSibling.classList.contains('before:w-[100%]')) {
+
+                e.target.nextElementSibling.classList.remove('before:left-0')
+                e.target.nextElementSibling.classList.add('before:right-0')
+                e.target.nextElementSibling.classList.remove('before:w-[100%]')
+                e.target.nextElementSibling.classList.add('before:w-[0%]')
+                console.log('salam');
+
+            }
+        })
+    })
+
+
+    a.forEach((val) => {
+        val.addEventListener('mouseenter', (e) => {
+
+
+            if (e.target.classList.contains('before:w-[0%]')) {
+
+                e.target.classList.remove('before:w-[0%]')
+                e.target.classList.add('before:w-[100%]')
+                e.target.classList.remove('before:right-0')
+                e.target.classList.add('before:left-0')
+
+            }
+
+
+        })
+
+        val.addEventListener('mouseleave', (e) => {
+
+            if (e.target.classList.contains('before:w-[100%]')) {
+
+                e.target.classList.remove('before:left-0')
+                e.target.classList.add('before:right-0')
+                e.target.classList.remove('before:w-[100%]')
+                e.target.classList.add('before:w-[0%]')
+                console.log('salam');
+
+            }
+
+        })
+    })
+
+
+
+    toggle.addEventListener('click', (e) => {
+
+        svg.classList.toggle('active')
+
+        if (box.classList.contains('h-[0vh]')) {
+            shadow.classList.remove('h-[0vh]')
+            shadow.classList.add('h-[100vh]')
+
+            setTimeout(() => {
+                box.classList.add('h-[100vh]')
+                box.classList.remove('h-[0vh]')
+            }, 400);
+            main.classList.remove('overflow-y-scroll')
+            main.classList.add('overflow-y-hidden')
+        } else {
+            box.classList.remove('h-[100vh]')
+            box.classList.add('h-[0vh]')
+            setTimeout(() => {
+                shadow.classList.remove('h-[100vh]')
+                shadow.classList.add('h-[0vh]')
+            }, 400);
+            main.classList.add('overflow-y-scroll')
+            main.classList.remove('overflow-y-hidden')
+        }
+    })
+
+
+
+    li2.forEach((val) => {
+
+
+        val.addEventListener('mouseenter', (e) => {
+            let data_li = val.getAttribute('data-li')
+
+
+
+
+
+            fig.forEach((figure) => {
+                data_fig = figure.getAttribute('data-fig')
+
+                figure.classList.remove('opacity-100')
+                figure.classList.add('opacity-0')
+                figure.classList.remove('scale-100')
+                figure.classList.add('scale-0')
+                figure.classList.remove('rotate-[10deg]')
+                figure.classList.add('rotate-[0deg]')
+
+
+                if (data_li == data_fig) {
+                    console.log(data_fig);
+                    figure.classList.remove('opacity-0')
+                    figure.classList.add('opacity-100')
+                    figure.classList.remove('scale-0')
+                    figure.classList.add('scale-100')
+                    figure.classList.add('rotate-[10deg]')
+                    figure.classList.remove('rotate-[0deg]')
+                }
+            })
+
+
+
+
+            let temp = e.target.children[1].children[1]
+
+
+            li2.forEach((tem) => {
+                let temp2 = tem.children[1].children[1]
+
+
+                if (temp2.classList.contains('before:w-[100%]')) {
+                    temp2.classList.remove('before:left-0')
+                    temp2.classList.add('before:right-0')
+                    temp2.classList.remove('before:w-[100%]')
+                    temp2.classList.add('before:w-[0%]')
+                    temp2.classList.add('lg:text-[#9b9b9b]')
+                    temp2.classList.remove('lg:text-black')
+                }
+
+            })
+
+            if (temp.classList.contains('before:w-[0%]')) {
+                temp.classList.remove('before:w-[0%]')
+                temp.classList.remove('before:right-0')
+                temp.classList.add('before:left-0')
+                temp.classList.add('before:w-[100%]')
+                temp.classList.remove('lg:text-[#9b9b9b]')
+                temp.classList.add('lg:text-black')
+            }
+
+        })
+    })
+
+</script>
+
+</html>
