@@ -1,6 +1,26 @@
-# project-6
-hi this is my new project
+ <h1>
+  Template 6
+</h1>
+<br />
+<div style=" display: flex; gap: 10px; ">
+  <img src="public/icons8-react-js-100.png" alt="react" />
+  <img src="public/icons8-tailwindcss-96.png" alt="react" />
+</div>
+<br />
+<a href="https://project-6-ten.vercel.app/">
+  <img src="public/project6.png" alt="project6" />
+</a>
 
-i made it with : html tailwind js
+<pre style="font-size: 25px ; color: white;">
+  I Created This project using :
+  HTML5
+  JavaScript
+  tailwindcss
+</pre>
 
-live link : https://aliifarokh.github.io/project-6/src/
+I Deployed it on vercel and You Can See it Online :  https://project-6-ten.vercel.app/
+
+</div>
+
+
+</div>
