@@ -19,7 +19,7 @@
   JavaScript
 </pre>
 
-I Deployed it on vercel and You Can See it Online :  https://project-6-ten.vercel.app/
+I Deployed it on vercel and You Can See it Online :  https://aliifarokh.github.io/project-6/src/
 
 </div>
 
